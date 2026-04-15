@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Поддержка Wordlio</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      max-width: 920px;
+      margin: 40px auto;
+      padding: 0 20px 60px;
+      color: #111;
+      line-height: 1.6;
+      background: #fff;
+    }
+
+    h1 {
+      font-size: 44px;
+      margin: 0 0 10px;
+    }
+
+    .subtitle {
+      font-size: 22px;
+      color: #555;
+      margin: 0 0 30px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 20px;
+    }
+
+    .lang-link {
+      font-size: 16px;
+      color: #2f5cff;
+      text-decoration: none;
+      border: 1px solid #d9d9d9;
+      border-radius: 999px;
+      padding: 8px 14px;
+    }
+
+    .lang-link:hover {
+      text-decoration: none;
+      background: #f7f8fa;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 24px;
+      padding: 28px 32px;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin: 0 0 18px;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 0 0 12px;
+    }
+
+    a {
+      color: #2f5cff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 8px;
+    }
+
+    .faq-item {
+      border: 1px solid #e6e6e6;
+      border-radius: 18px;
+      padding: 18px 20px;
+      background: #fff;
+    }
+
+    .faq-question {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0 0 8px;
+    }
+
+    .faq-answer {
+      font-size: 18px;
+      color: #333;
+      margin: 0;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        margin: 24px auto;
+        padding: 0 16px 40px;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      .subtitle {
+        font-size: 19px;
+      }
+
+      .card {
+        padding: 22px 20px;
+        border-radius: 20px;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+
+      .faq-question {
+        font-size: 18px;
+      }
+
+      .faq-answer,
+      p {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <a class="lang-link" href="index.html">English</a>
+  </div>
+
+  <h1>Поддержка Wordlio</h1>
+  <p class="subtitle">Помощь, ответы на вопросы и контакты</p>
+
+  <div class="card">
+    <h2>Связаться с нами</h2>
+    <p>Email: <a href="mailto:4sup.emailmehere@gmail.com">4sup.emailmehere@gmail.com</a></p>
+    <p>Пожалуйста, укажите модель устройства, версию iOS и коротко опишите проблему.</p>
+  </div>
+
+  <div class="card">
+    <h2>FAQ</h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question">Как добавить новое слово?</div>
+        <p class="faq-answer">
+          Слово можно добавить вручную, голосом, с фото или импортировать свой список из файла.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Как работают повторения?</div>
+        <p class="faq-answer">
+          После повтора вы отмечаете, насколько слово было сложным. Wordlio использует это, чтобы решить, когда показать его снова.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Работает ли Wordlio без интернета?</div>
+        <p class="faq-answer">
+          Да. Ваши слова и прогресс хранятся на устройстве и доступны офлайн.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Можно ли импортировать свой список слов?</div>
+        <p class="faq-answer">
+          Да. Вы можете импортировать свои слова из файла и сразу начать их учить.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Могу ли я потерять свои слова?</div>
+        <p class="faq-answer">
+          Нет. Все ваши слова хранятся локально на устройстве.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
