@@ -1,3 +1,6 @@
+Ниже готовая обновлённая версия. Она учитывает перевод через Cloudflare и DeepL, AdMob, Google Play Billing, камеру, распознавание текста, микрофон, уведомления и резервное копирование Android.
+
+```html
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,52 +9,352 @@
   <meta name="color-scheme" content="light dark">
   <title>Wordlio Privacy Policy</title>
   <style>
-    :root { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; }
-    body { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
-    h1, h2 { line-height: 1.25; }
-    h1 { margin-bottom: 4px; }
-    .updated { color: #666; margin-top: 0; }
-    a { overflow-wrap: anywhere; }
+    :root {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    body {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+
+    h1, h2 {
+      line-height: 1.25;
+    }
+
+    h1 {
+      margin-bottom: 4px;
+    }
+
+    .updated {
+      color: #666;
+      margin-top: 0;
+    }
+
+    a {
+      overflow-wrap: anywhere;
+    }
   </style>
 </head>
 <body>
   <main>
     <h1>Privacy Policy for Wordlio</h1>
-    <p class="updated"><strong>Last updated:</strong> July 21, 2026</p>
+    <p class="updated"><strong>Last updated:</strong> August 14, 2026</p>
 
-    <p>This Privacy Policy explains how Wordlio, an Android application developed by Tatsiana Knysh, handles information when you use the app.</p>
+    <p>
+      This Privacy Policy explains how Wordlio, an Android application
+      developed by Tatsiana Knysh, handles information when you use the app.
+    </p>
 
     <h2>Information handled by Wordlio</h2>
-    <p>Wordlio does not require user registration and does not ask you to provide personal information such as your name, email address, phone number, or precise location.</p>
-    <p>Your learning progress and app preferences may be stored locally on your device to provide the app's functionality. This locally stored information is not transmitted to the developer. You can delete it by clearing the app's data or uninstalling the app.</p>
+
+    <p>
+      Wordlio does not require user registration and does not ask you to
+      provide personal information such as your name, phone number, email
+      address, or precise location.
+    </p>
+
+    <p>
+      Your vocabulary, learning progress, review history, installed word
+      packs, notification settings, purchase status, and other app
+      preferences are stored locally on your device to provide the app's
+      functionality.
+    </p>
+
+    <p>
+      Wordlio does not operate a developer-controlled account system or
+      database containing your vocabulary or learning progress.
+    </p>
+
+    <h2>Translation service</h2>
+
+    <p>
+      When you request a translation, the word or text you submit is sent
+      over an encrypted HTTPS connection to a Cloudflare Worker operated for
+      Wordlio. The Worker forwards the text to DeepL to generate the
+      translation.
+    </p>
+
+    <p>
+      When you use the image scanning feature, individual words recognized
+      from an image may also be sent to the Wordlio Cloudflare Worker for
+      spelling completion and to DeepL for translation.
+    </p>
+
+    <p>
+      Do not submit confidential, sensitive, or personally identifiable
+      information for translation. The developer does not intentionally
+      store submitted translation text in a developer-controlled database.
+      However, Cloudflare and DeepL may process technical information and
+      service request data according to their own terms, security practices,
+      and privacy policies.
+    </p>
+
+    <p>
+      For more information, see the
+      <a href="https://www.cloudflare.com/privacypolicy/">
+        Cloudflare Privacy Policy
+      </a>
+      and the
+      <a href="https://www.deepl.com/privacy">
+        DeepL Privacy Policy
+      </a>.
+    </p>
+
+    <h2>Camera, images, and text recognition</h2>
+
+    <p>
+      Wordlio may request access to your device's camera or allow you to
+      select an image so that text can be recognized and added to your
+      vocabulary.
+    </p>
+
+    <p>
+      Image text recognition is performed on the device using Google ML Kit.
+      Wordlio does not upload or store the original image on a
+      developer-controlled server. Recognized words may be sent to the
+      translation service as described above.
+    </p>
+
+    <p>
+      Camera access is used only when you choose to use the scanning feature.
+      You can deny or revoke camera permission through Android settings.
+    </p>
+
+    <h2>Microphone and voice input</h2>
+
+    <p>
+      Wordlio may request microphone access when you choose to enter a word
+      using your voice. Voice recognition is provided by the speech
+      recognition service available on your Android device.
+    </p>
+
+    <p>
+      Depending on your device, Android version, speech service provider, and
+      settings, audio or recognized speech may be processed by Google or
+      another speech service provider. Wordlio does not store microphone
+      recordings on a developer-controlled server.
+    </p>
+
+    <p>
+      You can deny or revoke microphone permission through Android settings.
+      For information about Google's handling of voice data, see the
+      <a href="https://policies.google.com/privacy">
+        Google Privacy Policy
+      </a>.
+    </p>
 
     <h2>Advertising</h2>
-    <p>Wordlio uses Google AdMob to display advertisements. Google and its advertising partners may automatically collect or process information such as device identifiers, advertising identifiers, IP address, general location derived from the IP address, app interactions, diagnostic information, and information about advertisements shown to you. This information may be used to provide, measure, personalize, and prevent fraud in advertising, subject to your consent where required by law.</p>
-    <p>For more information about how Google handles data, please see <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
-    <h2>Your privacy choices</h2>
-    <p>Where required, Wordlio may present a consent form that allows you to choose whether advertising may be personalized. You may also be able to change your privacy choices from the app's settings. You can manage or reset the Android advertising identifier through your device's privacy settings.</p>
+    <p>
+      The free version of Wordlio uses Google AdMob to display banner and
+      rewarded advertisements.
+    </p>
+
+    <p>
+      Google and its advertising partners may automatically collect or
+      process information such as device identifiers, advertising
+      identifiers, IP address, general location derived from the IP address,
+      app interactions, diagnostic information, and information about
+      advertisements shown to you.
+    </p>
+
+    <p>
+      This information may be used to provide, measure, personalize, and
+      prevent fraud in advertising, subject to your consent where required
+      by law.
+    </p>
+
+    <p>
+      For more information, see
+      <a href="https://policies.google.com/technologies/partner-sites">
+        How Google uses information from sites or apps that use its services
+      </a>
+      and the
+      <a href="https://policies.google.com/privacy">
+        Google Privacy Policy
+      </a>.
+    </p>
+
+    <h2>Your advertising privacy choices</h2>
+
+    <p>
+      Where required by law, Wordlio presents a Google consent form that
+      allows you to choose how your information may be used for advertising,
+      including whether advertisements may be personalized.
+    </p>
+
+    <p>
+      When required, you can review or change your advertising privacy
+      choices through the privacy options available in Wordlio's settings.
+      You can also manage or reset the Android advertising identifier through
+      your device's privacy settings.
+    </p>
+
+    <h2>Purchases</h2>
+
+    <p>
+      Wordlio offers an optional Premium purchase through Google Play.
+      Purchases and payment information are processed by Google Play Billing.
+      Wordlio does not receive or store your full payment card or bank account
+      details.
+    </p>
+
+    <p>
+      Wordlio receives purchase status information from Google Play so that
+      it can activate or restore Premium features. Purchase processing is
+      governed by the
+      <a href="https://policies.google.com/privacy">
+        Google Privacy Policy
+      </a>
+      and the applicable Google Play terms.
+    </p>
+
+    <h2>Notifications</h2>
+
+    <p>
+      If you enable reminders, Wordlio stores your selected reminder times
+      locally and uses Android's notification and background scheduling
+      features to display learning reminders.
+    </p>
+
+    <p>
+      Wordlio does not use a developer-controlled server to send these
+      reminders. You can disable reminders in Wordlio or revoke notification
+      permission through Android settings.
+    </p>
+
+    <h2>Import and export</h2>
+
+    <p>
+      Wordlio allows you to import and export vocabulary files. Files are
+      accessed or created only when you initiate the corresponding action and
+      select a location through Android's system file interface.
+    </p>
+
+    <p>
+      Exported files may contain vocabulary and learning information. You are
+      responsible for choosing where these files are stored and with whom
+      they are shared.
+    </p>
+
+    <h2>Android backup</h2>
+
+    <p>
+      Depending on your device and Android backup settings, locally stored
+      Wordlio data may be included in an Android system backup associated
+      with your device or Google account.
+    </p>
+
+    <p>
+      These backups are managed by Android and the applicable backup
+      provider, not by the Wordlio developer. You can manage backup settings
+      through your device settings.
+    </p>
 
     <h2>Data sharing</h2>
-    <p>The developer does not sell your personal information. Information may be processed by Google AdMob and its advertising partners as described above. The developer may also disclose information when required by applicable law or a valid legal request.</p>
+
+    <p>
+      The developer does not sell your personal information.
+    </p>
+
+    <p>
+      Information may be processed by service providers only as needed to
+      provide app functionality, including:
+    </p>
+
+    <ul>
+      <li>Google AdMob for advertising;</li>
+      <li>Google Play for purchases;</li>
+      <li>Google or another device speech service for voice recognition;</li>
+      <li>Cloudflare for routing translation requests;</li>
+      <li>DeepL for generating translations.</li>
+    </ul>
+
+    <p>
+      Information may also be disclosed when required by applicable law or a
+      valid legal request.
+    </p>
 
     <h2>Data security</h2>
-    <p>Wordlio is designed to minimize the information handled by the developer. Local app data is protected by the security features of your Android device. Information processed by third-party services is handled under their respective security practices and privacy policies.</p>
+
+    <p>
+      Wordlio is designed to minimize the information handled by the
+      developer. Local app data is protected by the security features of your
+      Android device.
+    </p>
+
+    <p>
+      Translation requests are transmitted using HTTPS. However, no method of
+      electronic transmission, processing, or storage is completely secure,
+      and absolute security cannot be guaranteed.
+    </p>
+
+    <p>
+      Information processed by third-party services is handled according to
+      their respective security practices and privacy policies.
+    </p>
 
     <h2>Data retention and deletion</h2>
-    <p>The developer does not maintain user accounts or a database containing your learning progress. Locally stored progress and preferences remain on your device until you clear the app's data or uninstall Wordlio. Retention of information processed by Google is governed by Google's policies and your account or device settings.</p>
+
+    <p>
+      The developer does not maintain Wordlio user accounts or a
+      developer-controlled database containing your vocabulary or learning
+      progress.
+    </p>
+
+    <p>
+      Locally stored vocabulary, progress, review history, and preferences
+      remain on your device until you delete them in the app, clear the app's
+      data, or uninstall Wordlio. Android backups may remain subject to your
+      backup provider's retention rules.
+    </p>
+
+    <p>
+      Information processed by Google, Cloudflare, DeepL, or another service
+      provider is retained according to that provider's policies and your
+      applicable account or device settings.
+    </p>
 
     <h2>Children's privacy</h2>
-    <p>Wordlio is not directed specifically to children under 13. The developer does not knowingly collect personal information directly from children. If you believe a child has provided personal information to the developer, please contact the developer so that appropriate action can be taken.</p>
+
+    <p>
+      Wordlio is not directed specifically to children under 13. The
+      developer does not knowingly collect personal information directly
+      from children.
+    </p>
+
+    <p>
+      If you believe that a child has provided personal information through
+      Wordlio, please contact the developer so that the matter can be
+      reviewed and appropriate action can be taken.
+    </p>
 
     <h2>Changes to this policy</h2>
-    <p>This Privacy Policy may be updated when Wordlio's features, third-party services, or legal requirements change. The updated version will be published on this page, and the “Last updated” date will be revised.</p>
+
+    <p>
+      This Privacy Policy may be updated when Wordlio's features, third-party
+      services, or legal requirements change. The updated version will be
+      published on this page, and the “Last updated” date will be revised.
+    </p>
 
     <h2>Contact</h2>
-    <p>If you have questions or requests concerning this Privacy Policy, contact:</p>
-    <p>Tatsiana Knysh<br>
-      Email: <a href="mailto:4sup.emailmehere@gmail.com">4sup.emailmehere@gmail.com</a>
+
+    <p>
+      If you have questions or requests concerning this Privacy Policy,
+      contact:
+    </p>
+
+    <p>
+      Tatsiana Knysh<br>
+      Email:
+      <a href="mailto:4sup.emailmehere@gmail.com">
+        4sup.emailmehere@gmail.com
+      </a>
     </p>
   </main>
 </body>
 </html>
+```
